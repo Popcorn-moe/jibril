@@ -1,7 +1,8 @@
 import { configurable, RichEmbed, sendDiscordError } from '@popcorn.moe/migi'
+import { re } from 're-template-tag'
 import * as configuration from './defaultConfig.json'
 
-const COMMAND_MATCH = '^$command(?: <@!?(\\d+)>)?'
+const USER_MATCH = /<@!(\d+)>?/
 const randomIn = array => array[Math.floor(Math.random(array.length))]
 
 @configurable('image', configuration)
@@ -23,7 +24,7 @@ export default class Image {
 	}
 
 	setupOne(name, { desc, msg, gifs }) {
-		const regex = new RegExp(COMMAND_MATCH.replace('$command', name), 'i')
+		const regex = re`^${name}(?: <@!?(\d+)>)?`
 
 		this[name] = (message, mention) => {
 			const { member, guild } = message
