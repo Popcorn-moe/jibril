@@ -1,0 +1,36 @@
+{
+  "name": "@jibril/image",
+  "version": "1.0.0",
+  "description": "Image migi module",
+  "main": "lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Popcorn-moe/jibril.git"
+  },
+  "keywords": [
+    "migi",
+    "jibril",
+    "image",
+    "discord"
+  ],
+  "author": "Popcorn.moe team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Popcorn-moe/jibril/issues"
+  },
+  "homepage": "https://github.com/Popcorn-moe/jibril#readme",
+  "dependencies": {
+    "@popcorn.moe/migi": "^1.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.47",
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "prettier": "^1.12.1",
+    "rimraf": "^2.6.2"
+  }
+}
