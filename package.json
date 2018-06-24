@@ -1,15 +1,16 @@
 {
-  "name": "@jibril/image",
+  "name": "@popcorn.moe/jibril",
   "version": "1.0.0",
   "description": "Image migi module",
   "main": "lib",
   "files": [
     "lib",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "Image.js"
   ],
   "scripts": {
-    "build": "rimraf lib && babel src -d lib",
+    "build": "rimraf lib && babel src -d lib --copy-files",
     "prepack": "npm run build",
     "format": "prettier --write \"src/**/*.js\" \"examples/**/*.js\""
   },

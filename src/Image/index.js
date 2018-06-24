@@ -24,7 +24,7 @@ export default class Image {
 	}
 
 	setupOne(name, { desc, msg, gifs }) {
-		const regex = re`^${name}(?: <@!?(\d+)>)?`
+		const regex = re`^${name}(?: ${USER_MATCH})?`
 
 		this[name] = (message, mention) => {
 			const { member, guild } = message
