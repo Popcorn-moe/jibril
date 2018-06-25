@@ -1,3 +1,13 @@
 {
-	
+  "guilds": {
+    "225296987770060820": {
+      "channel": "340620490009739265",
+      "role": "308615845129617408",
+      "welcome": [
+        "Welcome $user!\n",
+        "Here we love unicorns. <#225296987770060820>"
+      ],
+      "bye": "$user ($displayName) no longer likes unicorns..."
+    }
+  }
 }
